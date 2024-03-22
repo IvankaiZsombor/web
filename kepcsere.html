@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KÉPCSERÉLŐS</title>
+    <style>
+        img {
+            width: 150px;
+            height: 220px;
+            object-fit: cover;
+            display: none;
+        }
+        #be {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="cc7b58cbcd341a19a6545d947e48329b.jpg" alt="on" id="be">
+    <img src="e0fd25f9127a9a109a0648c83ee61643.png" alt="off" id="ki">
+    <br>
+    <input type="button" value="ON" onclick="bekapcs()">
+    <input type="button" value="OFF" onclick="kikapcs()">
+    <script>
+        function bekapcs() {
+            document.getElementById("be").style.display = "block";
+            document.getElementById("ki").style.display = "none";
+        }
+        function kikapcs() {
+            document.getElementById("ki").style.display = "block";
+            document.getElementById("be").style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
