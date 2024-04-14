@@ -24,6 +24,38 @@
             font-weight: bold;
 
         }
+        h1,h2,h4,h3{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        img{
+            margin-top: 20px;
+            display: block; margin: auto;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card{
+
+            transition: transform 0.3s ease;
+            background-color: white;
+            height: 400px;
+
+        }
+        footer{
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body style="background-color: lightyellow;">
@@ -51,7 +83,7 @@
             <div class="col-md-4">
                 <a class="nav-link" href="#section2"><h3>Menü</h3></a>
             </div>
-            <div col-md-4>
+            <div class="col-md-4">
                 <a class="nav-link" href="#section3"><h3>Kapcsolat</h3></a>
             </div>
         </div>
@@ -67,94 +99,65 @@
     </div>
    <br>
 
-    <div class="row" id="section2" style="background-color: red; padding: 150px; overflow: hidden; border-top: 100px; border-bottom: 100px;"  >
+    <div class="row" id="section2" style="background-color: red; overflow: hidden; border-top: 50px; border-bottom: 50px;"  >
 <div class="container-fluid">
     <h1 style="color: white;">ÉTLAP</h1>
-        <div class="col-md-4" style="background-color: yellow;">
-            <h2>Burgerek</h2>
-            <h3 style="text-align: left;">BigMac:</h3>
-            <ul>
-                <li>Dupla sertés hús</li>
-                <li>Sajt</li>
-                <li>Saláta</li>
-                <li>Uborka</li>
-                <li>Szósz, saját ízlés szerint</li>
-                <li>Paradicsom</li>
-                <li>Hagyma</li>
-            </ul>
-            <h3 style="text-align: left;">McChicken:</h3>
-            <ul>
-                <li>Csirke hús</li>
-                <li>Saláta</li>
-                <li>Majonéz</li>
-            </ul>
-            <h3 style="text-align: left;">Sajtburger:</h3>
-            <ul>
-                <li>Sertés hús</li>
-                <li>Sajt</li>
-                <li>Ketchup</li>
-                <li>Hagyma</li>
-                <li>Uborka</li>
-            </ul>
-            <h3 style="text-align: left;">McCrispy:</h3>
-            <ul>
-                <li>Csirke hús</li>
-                <li>Saláta</li>
-                <li>Majonéz</li>
-                <li>Paradicsom</li>
-            </ul>
-            <h3 style="text-align: left;">Hamburger:</h3>
-            <ul>
-                <li>Sertés hús</li>
-                <li>Uborka</li>
-                <li>Ketchap</li>
-                <li>Mustár</li>
-                <li>Hagyma</li>
-            </ul>
-        </div>
-        <div class="col-md-4" style="background-color: yellow;">
-            <h2>Italok, üdítők</h2>
-            <ul style="font-size: large;">
-                <li>Coca-Cola ZERO</li>
-                <li>Coca-Cola</li>
-                <li>Sprite Zero</li>
-                <li>Fanta Narancs Zero</li>
-                <li>Lipton Zero citromízű jeges tea</li>
-                <li>Lipton Zero zöld jeges tea</li>
-                <li>100% Cappy narancsdzsúsz</li>
-                <li>My Tea barack (0,33 l)</li>
-                <li>Pepsi 0,33 l</li>
-                <li>Pepsi Max 0,33 l</li>
-                <li>Mirinda (0,33 l)</li>
-                <li>7Up (0,33 l)</li>
-                <li>100% Sió almalé</li>
-            </ul>
-        </div>
-        <div class="col-md-4" style="background-color: yellow;">
-            <h2>Burgonyák, falatkák</h2>
-            <h3 style="text-align: left;">Burgonyák:</h3>
-            <ul style="font-size: medium;">
-                <li>Kis burgonya</li>
-                <li>Közepes burgonya</li>
-                <li>Nagy burgonya</li>
-            </ul>
-            <h3 style="text-align: left;">Falatkák:</h3>
-            <ul style="font-size: medium;">
-                <li>6 Darabos McNuggets</li>
-                <li>9 Darabos McNuggets</li>
-                <li>12 Darabos McNuggets</li>
-                <li>20 Darabos McNuggets</li>
-            </ul>
-        </div>
+            
+        <div class="card col-md-4" style="background-color: white; height: 400px;">
+            <img src="https://imageproxy.wolt.com/menu/menu-images/6182cb18d7daa151ada0a95b/f44f417e-e0ad-11ee-8c4a-2eb9b6d80f8a_dh_delivr_4_2040.jpeg?w=300" alt="">
+            <h2>BigMac McMenü</h2>
+            <h2>HUF 2350</h2>
+    </div>
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/5ff97648db875c4528bd7b3b/133d2fb0-f004-11ed-88f0-56b4077a3a28_dh_delivr_2050.jpeg?w=300" alt="">
+        <h2>McChicken</h2>
+        <h2>HUF 1250</h2>
+    </div>
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/5ff9768934600bbf85439222/0ef234da-0ba9-11ee-831a-76cf2a29ff24_dh_delivr_2_2010.jpeg?w=300" alt="">
+        <h2>Sajtburger</h2>
+        <h2>HUF 750</h2>
+             
+    </div>
+        
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/6182cb18d7daa151ada0a95b/d23e3dd0-ae65-11ee-9435-1ec264291629_dh_delivr_2541.jpeg?w=300" alt="">
+        <h2>McCrispy</h2>
+        <h2>HUF 2150</h2>
+    </div>
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/5ff97648db875c4528bd7b3b/13aa914a-f004-11ed-88f0-56b4077a3a28_dh_delivr_8500.jpeg?w=300" alt="">
+        <h2>Forró almás pite</h2>
+        <h2>HUF 650</h2>
+    </div>
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/5ff97648db875c4528bd7b3b/13e74bf8-f004-11ed-924b-c6bb254d73fb_dh_delivr_2_2501.jpeg?w=300" alt="">
+        <h2>Chicken McNuggets 6db McMenü</h2>
+        <h2>HUF 2190</h2>
+    </div>
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/5ff97648db875c4528bd7b3b/14326f98-f004-11ed-924b-c6bb254d73fb_dh_delivr_2_7500.jpeg?w=300" alt="">
+        <h2>Coca-Cola 0,5 l</h2>
+        <h2>HUF 750</h2>
+    </div>
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/5ff97648db875c4528bd7b3b/14227c50-f004-11ed-924b-c6bb254d73fb_dh_delivr_2_7416.jpeg?w=300" alt="">
+        <h2>Fanta Narancs Zero 0,5 l</h2>
+        <h2>HUF 740</h2>
+    </div>
+    <div class="card col-md-4" style="background-color: white; height: 400px;">
+        <img src="https://imageproxy.wolt.com/menu/menu-images/5ff97648db875c4528bd7b3b/141aa2a0-f004-11ed-924b-c6bb254d73fb_dh_delivr_7772.jpeg?w=300" alt="">
+        <h2>Naturaqua 0,5 l szénsavmentes</h2>
+        <h2>HUF 490</h2>
     </div>
 </div>
-
+    </div>
 <br>
 <br>
 <br>
 
-<div id="section3" style=" padding-top: 200px; overflow: hidden; text-align: center;">
-<footer>
+<div id="section3" style=" padding-top: 200px; text-align: center;">
+<footer style="margin-bottom: 10px;">
     <p style="font-size: larger;">Bármiféle problémával,panasszal kapcsolatban itt küldjön üzenetet</p>
     <label for="fname" >Név:</label>
     <input type="text" id="fname" name="fname" value="">
