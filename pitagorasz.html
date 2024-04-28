@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pit</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -30,14 +30,20 @@
             <input type="number" name="asd" id="b">
             <br>
             <label for="b">C oldal:</label>
-            <input type="number" name="asd" id="c">
+            <input type="number" readonly name="asd" id="c">
             <br>
-            <input type="button" name="reset">
-            <input type="button" name="submit">
+            <button type="button" onclick="calculateC()">Submit</button>
+            <button type="reset">Reset</button>
         </div>
     </fieldset>
     <script>
-        function
+        function calculateC() {
+            c.value = Math.sqrt(a.value*a.value + b * b)
+        }
+        function reset {
+            reset
+        }
+
     
     </script>
 
