@@ -67,11 +67,12 @@
     <input type="number" id="b" name="b">
     <br>
     <br> 
-    <label for="c">c oldal hossza:</label>
-    <input type="number" id="eredmeny" name="eredmeny" readonly>
+    <div id="eredmeny">
+        
+    </div>
     <br>
-    <button id="szamol">Számolás</button>
-    <button id="torol">Törlés</button>
+    <button type="button" onclick="szamol()">Számolás</button>
+    <button type="button" onclick="torol()">Törlés</button>
     </form>
     <br>
     <p class="bebas-neue-regular">A tétel. Bármely derékszögű háromszög leghosszabb oldalának (átfogójának) négyzete megegyezik a másik két oldal (a befogók) négyzetösszegével. Tehát: ha egy háromszög derékszögű, akkor a leghosszabb oldalára emelt négyzet területe a másik két oldalra emelt négyzetek területének összegével egyenlő.</p>
