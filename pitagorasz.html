@@ -30,7 +30,7 @@
     if (isNaN(a) || isNaN(b)) { 
         alert("Kérlek add meg mindkét oldal hosszát!");
          return; } var c = Math.sqrt(a*a + b*b);
-          document.getElementById("eredmeny").innerText = "A háromszög átfogója (c) hossza: " + c.toFixed(2); 
+          document.getElementById("eredmeny").innerText = "A c oldal hossza: " + c.toFixed(2); 
     } 
           function torol() { 
             document.getElementById("a").value = "";
@@ -53,7 +53,7 @@
         </nav>
         <br>
         <h1 class="bebas-neue-regular">Pitagorasz tétele</h1> 
-        <img src="Pitagorasz tétel_sm.webp" alt="pitagorasz" style="float: left;">
+        <img src="letöltés.png" alt="pitagorasz" style="float: left;">
         <form> 
         <label 
         for="a">a oldal hossza:
@@ -67,7 +67,7 @@
     <input type="number" id="b" name="b">
     <br>
     <br> 
-    <div id="eredmeny">
+    <div id="eredmeny" style="font-size: medium;">
         
     </div>
     <br>
